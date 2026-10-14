@@ -778,6 +778,92 @@ a:hover {
   background: var(--avorio);
 }
 
+/* ---------- Competenze e percorso ---------- */
+
+.skills {
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+.skills h3,
+.path h3 {
+  font-size: var(--t-h3);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+.skills .chips {
+  max-width: 62ch;
+}
+.skills-note {
+  margin-top: 1.25rem;
+  font-size: var(--t-sm);
+  color: var(--testo-secondario);
+  max-width: 62ch;
+}
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  border-top: 1px solid var(--grigio);
+  border-left: 1px solid var(--grigio);
+}
+.skill-grid > div {
+  padding: 1.25rem 1.25rem 1.4rem;
+  border-right: 1px solid var(--grigio);
+  border-bottom: 1px solid var(--grigio);
+}
+.skill-grid dt {
+  font-family: var(--font-titoli);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.4rem;
+}
+.skill-grid dd {
+  margin: 0;
+  font-size: var(--t-sm);
+  color: var(--testo-secondario);
+}
+@media (max-width: 62rem) {
+  .skill-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 42rem) {
+  .skill-grid { grid-template-columns: 1fr; }
+}
+
+.path {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+}
+.timeline {
+  border-top: 1px solid var(--grigio);
+}
+.timeline li {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 0.5rem 2rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--grigio);
+}
+.timeline .when {
+  font-size: var(--t-sm);
+  font-weight: 600;
+  color: var(--verde);
+}
+.timeline strong {
+  display: block;
+  font-family: var(--font-titoli);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.25rem;
+}
+.timeline li div span {
+  font-size: var(--t-sm);
+  color: var(--testo-secondario);
+  display: block;
+  max-width: 70ch;
+}
+@media (max-width: 42rem) {
+  .timeline li { grid-template-columns: 1fr; }
+}
+
 /* ---------- Chi sono ---------- */
 
 .pillars {
