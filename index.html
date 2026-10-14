@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Francesco Martolini — Sviluppo web e consulenza IT</title>
+  <meta name="description" content="Siti web e soluzioni informatiche per professionisti e piccole imprese. Sviluppo web e consulenza IT, con un approccio diretto e pratico.">
+  <meta name="theme-color" content="#F5F4EF">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Francesco Martolini — Sviluppo web e consulenza IT">
+  <meta property="og:description" content="Siti web e soluzioni informatiche per professionisti e piccole imprese.">
+  <meta property="og:image" content="assets/img/og.png">
+  <meta property="og:image:alt" content="Francesco Martolini — Sviluppo web e consulenza IT">
+  <meta name="twitter:card" content="summary_large_image">
+  <!--
+    TODO dopo la scelta del dominio:
+    1. aggiungi <link rel="canonical" href="https://TUO-DOMINIO/">
+    2. aggiungi <meta property="og:url" content="https://TUO-DOMINIO/">
+    3. rendi assoluto il percorso di og:image (https://TUO-DOMINIO/assets/img/og.png)
+    4. aggiungi sitemap.xml e la riga Sitemap in robots.txt
+  -->
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preload" href="assets/fonts/manrope-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js"></script>
+</head>
+<body>
+  <!-- Icone (stile linea) e illustrazioni riutilizzabili -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+      <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01"/></symbol>
+      <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></symbol>
+      <symbol id="i-page" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 6l-3 12"/></symbol>
+      <symbol id="i-network" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v5m0 0-6 5m6-5 6 5"/></symbol>
+      <symbol id="i-support" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/><path d="M19 20a3 3 0 0 1-3 2h-3"/></symbol>
+      <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r=".6"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="M3 17l5-4 4 3 3-2 6 4"/></symbol>
+
+      <!-- Illustrazione: finestra di browser stilizzata (non è uno screenshot di un lavoro reale) -->
+      <symbol id="art-browser" viewBox="0 0 440 300">
+        <rect x="1" y="1" width="438" height="298" rx="10" class="a-surface a-stroke"/>
+        <path d="M1 40h438" class="a-stroke"/>
+        <circle cx="22" cy="21" r="4" class="a-grey"/><circle cx="38" cy="21" r="4" class="a-grey"/><circle cx="54" cy="21" r="4" class="a-grey"/>
+        <rect x="32" y="72" width="170" height="14" rx="7" class="a-ink"/>
+        <rect x="32" y="96" width="130" height="14" rx="7" class="a-ink"/>
+        <rect x="32" y="132" width="190" height="8" rx="4" class="a-grey"/>
+        <rect x="32" y="150" width="170" height="8" rx="4" class="a-grey"/>
+        <rect x="32" y="168" width="150" height="8" rx="4" class="a-grey"/>
+        <rect x="32" y="200" width="96" height="30" rx="6" class="a-green"/>
+        <rect x="236" y="64" width="172" height="170" rx="8" class="a-grey"/>
+        <polygon points="244,226 292,152 330,198 360,162 400,226" class="a-green"/>
+        <circle cx="378" cy="98" r="12" class="a-surface"/>
+        <rect x="32" y="254" width="110" height="28" rx="6" class="a-stroke a-nofill"/>
+        <rect x="165" y="254" width="110" height="28" rx="6" class="a-stroke a-nofill"/>
+        <rect x="298" y="254" width="110" height="28" rx="6" class="a-stroke a-nofill"/>
+      </symbol>
+      <!-- Illustrazione: rack stilizzato -->
+      <symbol id="art-rack" viewBox="0 0 200 260">
+        <rect x="1" y="1" width="198" height="258" rx="10" class="a-ink"/>
+        <g class="a-unit">
+          <rect x="16" y="18" width="168" height="46" rx="5"/><rect x="16" y="76" width="168" height="46" rx="5"/>
+          <rect x="16" y="134" width="168" height="46" rx="5"/><rect x="16" y="192" width="168" height="46" rx="5"/>
+        </g>
+        <g class="a-bar">
+          <rect x="30" y="34" width="72" height="6" rx="3"/><rect x="30" y="46" width="48" height="6" rx="3"/>
+          <rect x="30" y="92" width="72" height="6" rx="3"/><rect x="30" y="104" width="48" height="6" rx="3"/>
+          <rect x="30" y="150" width="72" height="6" rx="3"/><rect x="30" y="162" width="48" height="6" rx="3"/>
+          <rect x="30" y="208" width="72" height="6" rx="3"/><rect x="30" y="220" width="48" height="6" rx="3"/>
+        </g>
+        <g class="a-led"><circle cx="166" cy="41" r="4"/><circle cx="166" cy="99" r="4"/><circle cx="166" cy="157" r="4"/><circle cx="166" cy="215" r="4"/></g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Francesco Martolini, torna all'inizio">Francesco Martolini</a>
+
+      <nav class="site-nav" id="menu" aria-label="Principale">
+        <ul class="nav-list">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#sviluppo-web">Sviluppo web</a></li>
+          <li><a href="#consulenza-it">Consulenza IT</a></li>
+          <li><a href="#progetti">Progetti</a></li>
+          <li><a href="#chi-sono">Chi sono</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-primary btn-sm header-cta" href="#contatti">Contattami</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Apri il menu">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenuto">
+    <!-- ===================== HOME ===================== -->
+    <section class="hero wrap" id="top" aria-labelledby="titolo-hero">
+      <div class="hero-text">
+        <p class="kicker">Sviluppo web · Consulenza IT</p>
+        <h1 id="titolo-hero"><span>Tecnologia concreta.</span> <span>Soluzioni su misura.</span></h1>
+        <p class="hero-lead">Aiuto professionisti e piccole imprese a costruire la propria presenza online e a gestire le proprie esigenze informatiche, attraverso soluzioni semplici, funzionali e su misura.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contatti">Parliamo del tuo progetto <span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="btn btn-secondary" href="#progetti">I miei lavori</a>
+        </div>
+      </div>
+
+      <div class="hero-art figure" aria-hidden="true">
+        <svg viewBox="0 0 600 400" focusable="false">
+          <use href="#art-browser" x="10" y="20" width="440" height="300"/>
+          <use href="#art-rack" x="400" y="110" width="170" height="221"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="wrap services" aria-label="Aree di servizio">
+      <div class="services-split">
+        <a class="service" href="#sviluppo-web">
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-monitor"/></svg></span>
+          <h2><span class="num">01 /</span> Sviluppo web</h2>
+          <p class="sub">Siti web, portfolio e strumenti digitali.</p>
+          <p>Siti vetrina, landing page, portfolio e strumenti web personalizzati, con attenzione a navigazione, compatibilità mobile e prestazioni.</p>
+          <span class="go">Scopri di più <span class="arrow" aria-hidden="true">↗</span></span>
+        </a>
+        <a class="service" href="#consulenza-it">
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-server"/></svg></span>
+          <h2><span class="num">02 /</span> Consulenza IT</h2>
+          <p class="sub">Sistemi, reti e supporto informatico.</p>
+          <p>Supporto tecnico, configurazione di sistemi e servizi, reti e infrastrutture, in base alle esigenze e al perimetro concordato con il cliente.</p>
+          <span class="go">Scopri di più <span class="arrow" aria-hidden="true">↗</span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Citazione: frase tratta dal testo "Chi sono" -->
+    <section class="quote-band" aria-label="Approccio">
+      <div class="wrap">
+        <blockquote>
+          <p>Una buona soluzione tecnologica deve funzionare, essere comprensibile e rispondere a un'esigenza reale.</p>
+          <footer>Francesco Martolini</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="wrap strip" aria-label="Ambiti">
+      <ul>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-monitor"/></svg>Siti web</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-server"/></svg>Consulenza IT</li>
+        <li class="where"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Toscana, Italia</li>
+      </ul>
+    </section>
+
+    <!-- ===================== SVILUPPO WEB ===================== -->
+    <section class="section" id="sviluppo-web" aria-labelledby="titolo-web">
+      <div class="wrap">
+        <div class="split">
+          <div>
+            <p class="section-label">Sviluppo web</p>
+            <h2 id="titolo-web">Siti web progettati per la tua attività.</h2>
+            <p class="lead">Realizzo siti vetrina, landing page e portfolio per professionisti e piccole imprese. Ogni progetto parte dalle esigenze reali dell'attività e punta su chiarezza, navigazione intuitiva, compatibilità mobile e prestazioni.</p>
+            <p class="cta-row"><a class="btn btn-primary" href="#contatti">Parliamo del tuo progetto <span class="arrow" aria-hidden="true">↗</span></a></p>
+          </div>
+          <div class="figure" aria-hidden="true">
+            <svg viewBox="0 0 440 300" focusable="false"><use href="#art-browser" width="440" height="300"/></svg>
+          </div>
+        </div>
+
+        <ul class="features cols-4">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-layout"/></svg><strong>Siti vetrina</strong><span>Per presentare un'attività in modo chiaro e professionale.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-page"/></svg><strong>Landing page</strong><span>Una pagina focalizzata su un'offerta o un'iniziativa.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg><strong>Portfolio</strong><span>Per professionisti e creativi che vogliono mostrare il proprio lavoro.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg><strong>Strumenti personalizzati</strong><span>Soluzioni web semplici costruite su esigenze specifiche.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== CONSULENZA IT ===================== -->
+    <section class="section" id="consulenza-it" aria-labelledby="titolo-it">
+      <div class="wrap">
+        <div class="split">
+          <div>
+            <p class="section-label">Consulenza IT</p>
+            <h2 id="titolo-it">Soluzioni informatiche, senza complicazioni inutili.</h2>
+            <p class="lead">Supporto tecnico e configurazione di servizi, sistemi, reti e infrastrutture in funzione delle esigenze del cliente. Il perimetro del servizio viene definito in modo trasparente, in base alle competenze effettive e al tipo di intervento.</p>
+            <p class="cta-row"><a class="btn btn-primary" href="#contatti">Parliamo del tuo progetto <span class="arrow" aria-hidden="true">↗</span></a></p>
+          </div>
+          <div class="figure" aria-hidden="true">
+            <svg viewBox="0 0 440 300" focusable="false"><use href="#art-rack" x="120" y="20" width="200" height="260"/></svg>
+          </div>
+        </div>
+
+        <ul class="features cols-3">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-support"/></svg><strong>Supporto tecnico</strong><span>Assistenza per i problemi informatici di tutti i giorni.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-server"/></svg><strong>Sistemi e servizi</strong><span>Configurazione in base a ciò che serve davvero.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-network"/></svg><strong>Reti e infrastrutture</strong><span>Impostazione e gestione, nel perimetro concordato.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== PROGETTI ===================== -->
+    <section class="section" id="progetti" aria-labelledby="titolo-progetti">
+      <div class="wrap">
+        <div class="projects-head">
+          <p class="section-label">Il mio lavoro</p>
+          <h2 id="titolo-progetti">Progetti</h2>
+          <p>Ogni scheda indica se si tratta di un progetto reale o dimostrativo. Le schede ancora da completare sono segnalate come tali.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!--
+            Scheda 01: testo ricavato dal README pubblico del repository.
+            Da fare: verificare che "Ruolo" rispecchi il tuo contributo (es. aggiungere progettazione grafica)
+            e sostituire .thumb con uno screenshot reale (vedi README del progetto).
+          -->
+          <article class="project">
+            <div class="thumb"><svg class="icon" aria-hidden="true"><use href="#i-image"/></svg><span>Screenshot in arrivo</span></div>
+            <p class="project-tags"><span class="tag tag-verde">Progetto reale</span><span class="tag">Web</span></p>
+            <h3>Portfolio fotografico personale</h3>
+            <p>Un libro digitale dedicato al tema del tempo: su mobile si sfoglia come un libro a pagine, su desktop diventa un archivio editoriale a scorrimento. Bilingue italiano e inglese.</p>
+            <dl class="project-meta">
+              <dt>Ruolo</dt><dd>Sviluppo e pubblicazione del sito personale.</dd>
+              <dt>Soluzione</dt><dd>Sito statico senza framework, contenuti in file JSON, generazione di sitemap e pagine a ogni build.</dd>
+              <dt>Tecnologie</dt>
+              <dd class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>Cloudflare Workers</span></dd>
+            </dl>
+            <p class="project-link"><a class="link-arrow" href="https://francescomartolini.art" target="_blank" rel="noopener">Vedi il progetto <span class="arrow" aria-hidden="true">↗</span></a></p>
+          </article>
+
+          <article class="project is-pending">
+            <div class="thumb"><svg class="icon" aria-hidden="true"><use href="#i-image"/></svg><span>In preparazione</span></div>
+            <p class="project-tags"><span class="tag">Progetto dimostrativo</span><span class="tag">Web</span></p>
+            <h3>Sito per un'attività locale</h3>
+            <p>Concept per un'attività tipo (un artigiano, un negozio o un professionista). Non è un lavoro commissionato.</p>
+          </article>
+
+          <article class="project is-pending">
+            <div class="thumb"><svg class="icon" aria-hidden="true"><use href="#i-image"/></svg><span>In preparazione</span></div>
+            <p class="project-tags"><span class="tag">Caso studio</span><span class="tag">IT</span></p>
+            <h3>Configurazione o automazione</h3>
+            <p>Documentazione di un ambiente tecnico realizzato, senza dati riservati.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CHI SONO ===================== -->
+    <section class="section" id="chi-sono" aria-labelledby="titolo-chi">
+      <div class="wrap split">
+        <div>
+          <p class="section-label">La mia storia</p>
+          <h2 id="titolo-chi">Chi sono</h2>
+          <p class="lead-strong">Un approccio pratico alla tecnologia.</p>
+          <div class="prose">
+            <p>Mi occupo di informatica e sviluppo di soluzioni digitali, con un approccio orientato alla risoluzione dei problemi.</p>
+            <p>Credo che una buona soluzione tecnologica non debba essere necessariamente complessa: deve funzionare, essere comprensibile e rispondere a un'esigenza reale. Ogni progetto parte dall'ascolto: capire cosa serve davvero è il primo passo per costruire qualcosa di utile.</p>
+          </div>
+          <!--
+            Se vuoi una foto personale o del tuo spazio di lavoro, aggiungila qui con un <figure>
+            (vedi README). Usa solo immagini tue.
+          -->
+        </div>
+        <ul class="pillars">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-person"/></svg><div><strong>Approccio diretto</strong><span>Il cliente parla con la persona che segue il progetto.</span></div></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg><div><strong>Concretezza</strong><span>Le tecnologie si scelgono per risolvere un'esigenza, non per fare scena.</span></div></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><div><strong>Cura del risultato</strong><span>Interfacce pulite sul web; attenzione a funzionalità, stabilità e chiarezza nell'IT.</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATTI ===================== -->
+    <section class="section" id="contatti" aria-labelledby="titolo-contatti">
+      <div class="wrap split">
+        <div>
+          <p class="section-label">Contatti</p>
+          <h2 id="titolo-contatti">Hai un progetto in mente?</h2>
+          <p class="lead">Che tu abbia bisogno di un nuovo sito web, di uno strumento personalizzato o di un supporto informatico, raccontami cosa vorresti realizzare. Valutiamo insieme la soluzione più adatta alle tue esigenze.</p>
+        </div>
+
+        <div class="contact-card">
+          <p class="contact-label">Scrivimi via email</p>
+          <a class="contact-mail" href="mailto:Dev@francescomartolini.art">Dev@francescomartolini.art</a>
+          <p class="contact-note">Parli direttamente con me, senza intermediari.</p>
+          <a class="btn btn-light" href="mailto:Dev@francescomartolini.art?subject=Nuovo%20progetto">Parliamo del progetto <span class="arrow" aria-hidden="true">↗</span></a>
+          <ul class="contact-links">
+            <li><a href="https://github.com/FrancescoMartolini" target="_blank" rel="noopener">GitHub <span class="arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="https://it.linkedin.com/in/francescomartolini" target="_blank" rel="noopener">LinkedIn <span class="arrow" aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span><strong>Francesco Martolini</strong> · Sviluppo web · Consulenza IT</span>
+      <span class="footer-links"><a href="https://github.com/FrancescoMartolini" target="_blank" rel="noopener">GitHub</a> <a href="https://it.linkedin.com/in/francescomartolini" target="_blank" rel="noopener">LinkedIn</a> <a href="privacy.html">Privacy</a> <span>© 2026</span></span>
+    </div>
+  </footer>
+</body>
+</html>
