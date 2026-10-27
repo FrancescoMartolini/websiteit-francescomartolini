@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dominio e gestione centralizzata di un piccolo ufficio — Francesco Martolini</title>
+  <meta name="description" content="Caso studio IT in laboratorio: Active Directory, DNS, DHCP e policy di gruppo per un piccolo ufficio, in tre macro step.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#F5F4EF">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Dominio e gestione centralizzata di un piccolo ufficio — Francesco Martolini">
+  <meta property="og:description" content="Caso studio IT in laboratorio: Active Directory, DNS, DHCP e policy di gruppo per un piccolo ufficio, in tre macro step.">
+  <meta property="og:image" content="assets/img/og.png">
+  <meta property="og:image:alt" content="Francesco Martolini — Sviluppo web e consulenza IT">
+  <meta name="twitter:card" content="summary_large_image">
+  <!--
+    TODO dopo la scelta del dominio (da ripetere in ogni pagina .html):
+    canonical, og:url, og:image con percorso assoluto, sitemap.xml e riga Sitemap in robots.txt.
+  -->
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/manrope-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Francesco Martolini, torna alla home">Francesco Martolini</a>
+
+      <nav class="site-nav" id="menu" aria-label="Principale">
+        <ul class="nav-list">
+          <li><a href="sviluppo-web.html">Sviluppo web</a></li>
+          <li><a href="consulenza-it.html" aria-current="true">Sistemista IT</a></li>
+          <li><a href="https://francescomartolini.art" target="_blank" rel="noopener">Fotografo <span aria-hidden="true">↗</span><span class="visually-hidden"> (apre il sito fotografico)</span></a></li>
+          <li><a href="progetti.html">Progetti</a></li>
+          <li><a href="chi-sono.html">Chi sono</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-primary btn-sm header-cta" href="contatti.html">Contattami</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Apri il menu">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenuto">
+
+    <article>
+      <section class="section first" aria-labelledby="titolo-doc">
+        <div class="wrap">
+          <nav class="crumbs" aria-label="Percorso"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <a href="consulenza-it.html">Sistemista IT</a> <span aria-hidden="true">/</span> <a href="documentazione.html">Documentazione</a> <span aria-hidden="true">/</span> <span>Caso 1</span></nav>
+
+          <div class="split doc-head">
+            <div>
+              <p class="project-tags"><span class="tag tag-verde">Caso studio IT</span><span class="tag">Ambiente di laboratorio · dati fittizi</span></p>
+              <h1 id="titolo-doc">Dominio e gestione centralizzata di un piccolo ufficio</h1>
+
+              <!--
+                LA NECESSITÀ: riscrivi queste 3 frasi con il tuo scenario simulato.
+                Mantieni la forma: chi è il cliente (fittizio), qual è il problema, cosa serve.
+              -->
+              <div class="need">
+                <p class="need-label">La necessità</p>
+                <p>Uno studio professionale con 8 postazioni gestisce account, cartelle condivise e aggiornamenti computer per computer. Il risultato è tempo perso e regole diverse da una postazione all'altra. Serve un punto unico da cui gestire accessi, cartelle e regole.</p>
+                <p class="need-note">Scenario simulato nel mio laboratorio: nomi e indirizzi sono inventati.</p>
+              </div>
+            </div>
+
+            <figure class="shot shot-schema">
+              <div class="shot-slot"><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-network"/></svg><span>Schema della rete da inserire</span></div>
+              <figcaption><span class="tpl">Schema disegnato da te: server, postazioni, rete. Solo nomi e indirizzi di esempio.</span></figcaption>
+            </figure>
+          </div>
+
+          <dl class="doc-meta">
+            <div><dt>Scenario</dt><dd>Studio professionale con 8 postazioni (simulato)</dd></div>
+            <div><dt>Ambiente</dt><dd><span class="tpl">Elenco delle macchine virtuali e del loro ruolo</span></dd></div>
+            <div><dt>Strumenti</dt><dd class="chips"><span>Windows Server</span><span>Active Directory</span><span>DNS</span><span>DHCP</span><span>GPO</span><span>Windows 11</span></dd></div>
+            <div><dt>Esito</dt><dd><span class="tpl">Una frase sul risultato, verificabile</span></dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="titolo-step">
+        <div class="wrap">
+          <p class="section-label">Come l'ho affrontato</p>
+          <h2 id="titolo-step" class="visually-hidden">I tre macro step</h2>
+          <!--
+            I TRE MACRO STEP: per ciascuno compila obiettivo, passaggi (3-6 punti), uno screenshot e la verifica.
+            I testi in stile "tpl" sono suggerimenti da sostituire: cerca class="tpl" per trovarli tutti.
+            Prima di pubblicare: nessun nome reale, licenza, credenziale o indirizzo vero negli screenshot.
+          -->
+          <ol class="macro">
+          <li class="macro-step">
+            <h2>Preparare l'ambiente</h2>
+            <p class="macro-goal"><strong>Obiettivo.</strong> Avere un server e due postazioni pronti, in una rete isolata dal resto.</p>
+            <h3>Cosa ho fatto</h3>
+            <ul class="steps-list">
+                <li><span class="tpl">Creazione delle macchine virtuali e della rete isolata</span></li>
+                <li><span class="tpl">Installazione di Windows Server, con nome e indirizzo IP fissi</span></li>
+                <li><span class="tpl">Installazione delle due postazioni Windows 11</span></li>
+            </ul>
+            <figure class="shot">
+              <div class="shot-slot"><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-image"/></svg><span>Screenshot da inserire</span></div>
+              <figcaption><span class="tpl">Cosa si vede nello screenshot e perché conta (es. elenco delle macchine virtuali).</span></figcaption>
+            </figure>
+            <p class="verify"><strong>Verifica.</strong> <span class="tpl">Come ho controllato che le macchine si vedano tra loro in rete.</span></p>
+          </li>
+          <li class="macro-step">
+            <h2>Configurare il dominio e i servizi</h2>
+            <p class="macro-goal"><strong>Obiettivo.</strong> Un dominio funzionante, con utenti, gruppi e postazioni collegate.</p>
+            <h3>Cosa ho fatto</h3>
+            <ul class="steps-list">
+                <li><span class="tpl">Installazione di Active Directory e creazione del dominio</span></li>
+                <li><span class="tpl">Configurazione di DNS e DHCP</span></li>
+                <li><span class="tpl">Creazione di utenti e gruppi per reparto</span></li>
+                <li><span class="tpl">Collegamento delle due postazioni al dominio</span></li>
+            </ul>
+            <figure class="shot">
+              <div class="shot-slot"><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-image"/></svg><span>Screenshot da inserire</span></div>
+              <figcaption><span class="tpl">Cosa si vede nello screenshot (es. utenti e gruppi nella console di Active Directory).</span></figcaption>
+            </figure>
+            <p class="verify"><strong>Verifica.</strong> <span class="tpl">Accesso alle postazioni con un account di dominio.</span></p>
+          </li>
+          <li class="macro-step">
+            <h2>Applicare le regole e verificare</h2>
+            <p class="macro-goal"><strong>Obiettivo.</strong> Regole uguali per tutti, gestite da un unico punto.</p>
+            <h3>Cosa ho fatto</h3>
+            <ul class="steps-list">
+                <li><span class="tpl">Cartelle condivise con permessi diversi per gruppo</span></li>
+                <li><span class="tpl">Policy di gruppo (GPO): unità di rete, restrizioni, aggiornamenti</span></li>
+                <li><span class="tpl">Prove con un utente per ogni reparto</span></li>
+            </ul>
+            <figure class="shot">
+              <div class="shot-slot"><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-image"/></svg><span>Screenshot da inserire</span></div>
+              <figcaption><span class="tpl">Cosa si vede nello screenshot (es. una GPO applicata, controllata sulla postazione).</span></figcaption>
+            </figure>
+            <p class="verify"><strong>Verifica.</strong> <span class="tpl">Ogni utente vede solo ciò che deve vedere.</span></p>
+          </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="titolo-problemi">
+        <div class="wrap split">
+          <div>
+            <p class="section-label">Dietro le quinte</p>
+            <h2 id="titolo-problemi">Problemi incontrati e come si ripristina</h2>
+          </div>
+          <ul class="steps-list">
+            <li><span class="tpl">Un problema reale che hai incontrato e come l'hai risolto</span></li>
+            <li><span class="tpl">Come si torna indietro se una modifica va storta (es. snapshot, backup della configurazione)</span></li>
+            <li><span class="tpl">Cosa faresti in modo diverso in un ambiente reale</span></li>
+          </ul>
+        </div>
+      </section>
+    </article>
+
+    <section class="wrap next" aria-label="Contatto">
+      <div class="contact-strip">
+        <p>Hai un'esigenza simile nel tuo studio o nella tua piccola azienda?</p>
+        <a class="btn btn-primary" href="contatti.html">Parliamone <span class="arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span><strong>Francesco Martolini</strong> · Sviluppo web · Sistemista IT · Toscana, Italia</span>
+      <span class="footer-links"><a href="https://github.com/FrancescoMartolini" target="_blank" rel="noopener">GitHub</a> <a href="https://it.linkedin.com/in/francescomartolini" target="_blank" rel="noopener">LinkedIn</a> <a href="privacy.html">Privacy</a> <span>© 2026</span></span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sviluppo web — Francesco Martolini</title>
+  <meta name="description" content="Siti vetrina, landing page, portfolio e strumenti web personalizzati per professionisti e piccole imprese.">
+  <meta name="theme-color" content="#F5F4EF">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Sviluppo web — Francesco Martolini">
+  <meta property="og:description" content="Siti vetrina, landing page, portfolio e strumenti web personalizzati per professionisti e piccole imprese.">
+  <meta property="og:image" content="assets/img/og.png">
+  <meta property="og:image:alt" content="Francesco Martolini — Sviluppo web e consulenza IT">
+  <meta name="twitter:card" content="summary_large_image">
+  <!--
+    TODO dopo la scelta del dominio (da ripetere in ogni pagina .html):
+    canonical, og:url, og:image con percorso assoluto, sitemap.xml e riga Sitemap in robots.txt.
+  -->
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/manrope-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Francesco Martolini, torna alla home">Francesco Martolini</a>
+
+      <nav class="site-nav" id="menu" aria-label="Principale">
+        <ul class="nav-list">
+          <li><a href="sviluppo-web.html" aria-current="page">Sviluppo web</a></li>
+          <li><a href="consulenza-it.html">Sistemista IT</a></li>
+          <li><a href="https://francescomartolini.art" target="_blank" rel="noopener">Fotografo <span aria-hidden="true">↗</span><span class="visually-hidden"> (apre il sito fotografico)</span></a></li>
+          <li><a href="progetti.html">Progetti</a></li>
+          <li><a href="chi-sono.html">Chi sono</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-primary btn-sm header-cta" href="contatti.html">Contattami</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Apri il menu">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenuto">
+<!-- ===================== SVILUPPO WEB ===================== -->
+    <section class="section first" id="sviluppo-web" aria-labelledby="titolo-web">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Percorso"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Sviluppo web</span></nav>
+        <div class="split">
+          <div>
+            <p class="section-label">Sviluppo web</p>
+            <h1 id="titolo-web">Siti web progettati per la tua attività.</h1>
+            <p class="lead">Realizzo siti vetrina, landing page e portfolio per professionisti e piccole imprese. Ogni progetto parte dalle esigenze reali dell'attività e punta su chiarezza, navigazione intuitiva, compatibilità mobile e prestazioni.</p>
+            <p class="cta-row"><a class="btn btn-primary" href="contatti.html">Parliamo del tuo progetto <span class="arrow" aria-hidden="true">↗</span></a> <a class="btn btn-secondary" href="progetti.html#web">Progetti web</a></p>
+          </div>
+          <div class="figure" aria-hidden="true">
+            <svg viewBox="0 0 440 300" focusable="false"><use href="assets/img/sprite.svg#art-browser" width="440" height="300"/></svg>
+          </div>
+        </div>
+
+        <ul class="features cols-4">
+          <li><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-layout"/></svg><strong>Siti vetrina</strong><span>Per presentare un'attività in modo chiaro e professionale.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-page"/></svg><strong>Landing page</strong><span>Una pagina focalizzata su un'offerta o un'iniziativa.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-briefcase"/></svg><strong>Portfolio</strong><span>Per professionisti e creativi che vogliono mostrare il proprio lavoro.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-code"/></svg><strong>Strumenti personalizzati</strong><span>Soluzioni web semplici costruite su esigenze specifiche.</span></li>
+        </ul>
+        <div class="skills">
+          <h3>Tecnologie con cui ho lavorato</h3>
+          <p class="chips"><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>JavaScript</span><span>jQuery</span><span>TypeScript</span><span>Angular</span><span>Node.js</span><span>Express</span><span>MySQL</span><span>Java e Java EE</span></p>
+          <p class="skills-note">Esperienza professionale come sviluppatore front-end con Angular e formazione full stack. Il sito del mio portfolio fotografico, invece, è scritto in JavaScript senza framework.</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="wrap next" aria-label="Altre aree">
+      <p class="section-label">Altre aree</p>
+      <div class="services-split cols-2">
+        <a class="service" href="consulenza-it.html">
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-server"/></svg></span>
+          <h2><span class="num">02 /</span> Sistemista IT</h2>
+          <p>Supporto tecnico, sistemi e servizi, reti e infrastrutture.</p>
+          <span class="go">Scopri di più <span class="arrow" aria-hidden="true">↗</span></span>
+        </a>
+        <a class="service" href="https://francescomartolini.art" target="_blank" rel="noopener">
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-camera"/></svg></span>
+          <h2><span class="num">03 /</span> Fotografo</h2>
+          <p>Il mio lavoro fotografico, nel sito dedicato.</p>
+          <span class="go">Apri il sito fotografico <span class="arrow" aria-hidden="true">↗</span></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span><strong>Francesco Martolini</strong> · Sviluppo web · Sistemista IT · Toscana, Italia</span>
+      <span class="footer-links"><a href="https://github.com/FrancescoMartolini" target="_blank" rel="noopener">GitHub</a> <a href="https://it.linkedin.com/in/francescomartolini" target="_blank" rel="noopener">LinkedIn</a> <a href="privacy.html">Privacy</a> <span>© 2026</span></span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Documentazione tecnica — Francesco Martolini</title>
+  <meta name="description" content="Casi studio IT ricostruiti in laboratorio, con dati fittizi: necessità, tre macro step e verifica.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#F5F4EF">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Documentazione tecnica — Francesco Martolini">
+  <meta property="og:description" content="Casi studio IT ricostruiti in laboratorio, con dati fittizi: necessità, tre macro step e verifica.">
+  <meta property="og:image" content="assets/img/og.png">
+  <meta property="og:image:alt" content="Francesco Martolini — Sviluppo web e consulenza IT">
+  <meta name="twitter:card" content="summary_large_image">
+  <!--
+    TODO dopo la scelta del dominio (da ripetere in ogni pagina .html):
+    canonical, og:url, og:image con percorso assoluto, sitemap.xml e riga Sitemap in robots.txt.
+  -->
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/manrope-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Francesco Martolini, torna alla home">Francesco Martolini</a>
+
+      <nav class="site-nav" id="menu" aria-label="Principale">
+        <ul class="nav-list">
+          <li><a href="sviluppo-web.html">Sviluppo web</a></li>
+          <li><a href="consulenza-it.html" aria-current="true">Sistemista IT</a></li>
+          <li><a href="https://francescomartolini.art" target="_blank" rel="noopener">Fotografo <span aria-hidden="true">↗</span><span class="visually-hidden"> (apre il sito fotografico)</span></a></li>
+          <li><a href="progetti.html">Progetti</a></li>
+          <li><a href="chi-sono.html">Chi sono</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-primary btn-sm header-cta" href="contatti.html">Contattami</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Apri il menu">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenuto">
+
+    <section class="section first" aria-labelledby="titolo-docs">
+      <div class="wrap">
+        <div class="projects-head">
+          <nav class="crumbs" aria-label="Percorso"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <a href="consulenza-it.html">Sistemista IT</a> <span aria-hidden="true">/</span> <span>Documentazione</span></nav>
+          <p class="section-label">Sistemista IT</p>
+          <h1 id="titolo-docs">Documentazione tecnica</h1>
+          <p>Casi studio ricostruiti in un ambiente di laboratorio, con dati fittizi. Ogni caso parte da una necessità, si sviluppa in tre macro step e finisce con una verifica.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project">
+            <div class="thumb"><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-network"/></svg><span>Schema in arrivo</span></div>
+            <p class="project-tags"><span class="tag">Caso 1</span><span class="tag">IT</span><span class="tag">Modello pronto</span></p>
+            <h3>Dominio e gestione centralizzata di un piccolo ufficio</h3>
+            <p>Active Directory, DNS, DHCP e policy di gruppo per uno studio con 8 postazioni.</p>
+            <p class="project-link"><a class="link-arrow" href="doc-dominio-ufficio.html">Apri il caso <span class="arrow" aria-hidden="true">↗</span></a></p>
+          </article>
+          <article class="project is-pending">
+            <div class="thumb"><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-image"/></svg><span>In preparazione</span></div>
+            <p class="project-tags"><span class="tag">Caso 2</span><span class="tag">IT</span></p>
+            <h3>Backup e ripristino</h3>
+            <p>Backup di un piccolo ambiente e, soprattutto, prova di ripristino documentata.</p>
+          </article>
+          <article class="project is-pending">
+            <div class="thumb"><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-image"/></svg><span>In preparazione</span></div>
+            <p class="project-tags"><span class="tag">Caso 3</span><span class="tag">IT</span></p>
+            <h3>Server web con HTTPS</h3>
+            <p>Nginx su Linux con redirect a HTTPS e certificato.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span><strong>Francesco Martolini</strong> · Sviluppo web · Sistemista IT · Toscana, Italia</span>
+      <span class="footer-links"><a href="https://github.com/FrancescoMartolini" target="_blank" rel="noopener">GitHub</a> <a href="https://it.linkedin.com/in/francescomartolini" target="_blank" rel="noopener">LinkedIn</a> <a href="privacy.html">Privacy</a> <span>© 2026</span></span>
+    </div>
+  </footer>
+</body>
+</html>

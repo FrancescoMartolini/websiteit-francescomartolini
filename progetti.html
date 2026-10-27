@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Progetti — Francesco Martolini</title>
+  <meta name="description" content="Progetti web e casi studio IT: ogni scheda indica se si tratta di un lavoro reale o dimostrativo.">
+  <meta name="theme-color" content="#F5F4EF">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Progetti — Francesco Martolini">
+  <meta property="og:description" content="Progetti web e casi studio IT: ogni scheda indica se si tratta di un lavoro reale o dimostrativo.">
+  <meta property="og:image" content="assets/img/og.png">
+  <meta property="og:image:alt" content="Francesco Martolini — Sviluppo web e consulenza IT">
+  <meta name="twitter:card" content="summary_large_image">
+  <!--
+    TODO dopo la scelta del dominio (da ripetere in ogni pagina .html):
+    canonical, og:url, og:image con percorso assoluto, sitemap.xml e riga Sitemap in robots.txt.
+  -->
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/manrope-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Francesco Martolini, torna alla home">Francesco Martolini</a>
+
+      <nav class="site-nav" id="menu" aria-label="Principale">
+        <ul class="nav-list">
+          <li><a href="sviluppo-web.html">Sviluppo web</a></li>
+          <li><a href="consulenza-it.html">Sistemista IT</a></li>
+          <li><a href="https://francescomartolini.art" target="_blank" rel="noopener">Fotografo <span aria-hidden="true">↗</span><span class="visually-hidden"> (apre il sito fotografico)</span></a></li>
+          <li><a href="progetti.html" aria-current="page">Progetti</a></li>
+          <li><a href="chi-sono.html">Chi sono</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-primary btn-sm header-cta" href="contatti.html">Contattami</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Apri il menu">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenuto">
+<!-- ===================== PROGETTI ===================== -->
+    <section class="section first" id="progetti" aria-labelledby="titolo-progetti">
+      <div class="wrap">
+        <div class="projects-head">
+          <nav class="crumbs" aria-label="Percorso"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Progetti</span></nav>
+          <p class="section-label">Il mio lavoro</p>
+          <h1 id="titolo-progetti">Progetti</h1>
+          <p>Ogni scheda indica se si tratta di un progetto reale o dimostrativo. Le schede ancora da completare sono segnalate come tali.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtra i progetti">
+          <button type="button" data-filter="all" aria-pressed="true">Tutti</button>
+          <button type="button" data-filter="web" aria-pressed="false">Web</button>
+          <button type="button" data-filter="it" aria-pressed="false">IT</button>
+        </div>
+
+        <div class="projects-grid" data-filter="all">
+          <!--
+            Scheda 01: testo ricavato dal README pubblico del repository.
+            Da fare: verificare che "Ruolo" rispecchi il tuo contributo (es. aggiungere progettazione grafica)
+            e sostituire .thumb con uno screenshot reale (vedi README del progetto).
+          -->
+          <article class="project" data-area="web">
+            <div class="thumb"><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-image"/></svg><span>Screenshot in arrivo</span></div>
+            <p class="project-tags"><span class="tag tag-verde">Progetto reale</span><span class="tag">Web</span></p>
+            <h3>Portfolio fotografico personale</h3>
+            <p>Un libro digitale dedicato al tema del tempo: su mobile si sfoglia come un libro a pagine, su desktop diventa un archivio editoriale a scorrimento. Bilingue italiano e inglese.</p>
+            <dl class="project-meta">
+              <dt>Ruolo</dt><dd>Sviluppo e pubblicazione del sito personale.</dd>
+              <dt>Soluzione</dt><dd>Sito statico senza framework, contenuti in file JSON, generazione di sitemap e pagine a ogni build.</dd>
+              <dt>Tecnologie</dt>
+              <dd class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>Cloudflare Workers</span></dd>
+            </dl>
+            <p class="project-link"><a class="link-arrow" href="https://francescomartolini.art" target="_blank" rel="noopener">Vedi il progetto <span class="arrow" aria-hidden="true">↗</span></a></p>
+          </article>
+
+          <article class="project" data-area="web">
+            <div class="thumb"><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-image"/></svg><span>Screenshot in arrivo</span></div>
+            <p class="project-tags"><span class="tag tag-verde">Progetto reale</span><span class="tag">Web</span></p>
+            <h3>Sito per una social media manager</h3>
+            <p>Sito per una social media manager freelance, che si occupa di contenuti, strategia e identità digitale per brand e attività locali.</p>
+            <dl class="project-meta">
+              <dt>Ruolo</dt><dd>Sviluppo del sito.</dd>
+              <dt>Soluzione</dt><dd>Sito a più pagine (home, servizi, contatti), predisposto per contenuti modificabili tramite un pannello Sanity.</dd>
+              <dt>Tecnologie</dt>
+              <dd class="chips"><span>React</span><span>Vite</span><span>Tailwind CSS</span><span>React Router</span><span>Sanity</span></dd>
+            </dl>
+            <p class="project-link"><a class="link-arrow" href="https://francescomartolini.github.io/diletta-smm/" target="_blank" rel="noopener">Vedi il progetto <span class="arrow" aria-hidden="true">↗</span></a></p>
+          </article>
+
+          <article class="project" data-area="web">
+            <div class="thumb"><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-image"/></svg><span>Screenshot in arrivo</span></div>
+            <p class="project-tags"><span class="tag tag-verde">Progetto reale</span><span class="tag">Web</span><span class="tag">In corso</span></p>
+            <h3>Sito per un laboratorio di stationery</h3>
+            <p>Sito per un laboratorio di stationery per matrimoni ed eventi, con un'introduzione a scorrimento che si può saltare. Progetto in corso.</p>
+            <dl class="project-meta">
+              <dt>Ruolo</dt><dd>Sviluppo del sito.</dd>
+              <dt>Soluzione</dt><dd>Pagina unica statica, senza framework.</dd>
+              <dt>Tecnologie</dt>
+              <dd class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></dd>
+            </dl>
+            <p class="project-link"><a class="link-arrow" href="https://francescomartolini.github.io/thesisilab/" target="_blank" rel="noopener">Vedi il progetto <span class="arrow" aria-hidden="true">↗</span></a></p>
+          </article>
+
+          <article class="project is-pending" data-area="web">
+            <div class="thumb"><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-image"/></svg><span>In preparazione</span></div>
+            <p class="project-tags"><span class="tag">Progetto dimostrativo</span><span class="tag">Web</span></p>
+            <h3>Sito per un'attività locale</h3>
+            <p>Concept per un'attività tipo (un artigiano, un negozio o un professionista). Non è un lavoro commissionato.</p>
+          </article>
+
+          <article class="project is-pending" data-area="it">
+            <div class="thumb"><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-image"/></svg><span>In preparazione</span></div>
+            <p class="project-tags"><span class="tag">Caso studio</span><span class="tag">IT</span></p>
+            <h3>Configurazione o automazione</h3>
+            <p>Documentazione di un ambiente tecnico realizzato, senza dati riservati.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+      </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span><strong>Francesco Martolini</strong> · Sviluppo web · Sistemista IT · Toscana, Italia</span>
+      <span class="footer-links"><a href="https://github.com/FrancescoMartolini" target="_blank" rel="noopener">GitHub</a> <a href="https://it.linkedin.com/in/francescomartolini" target="_blank" rel="noopener">LinkedIn</a> <a href="privacy.html">Privacy</a> <span>© 2026</span></span>
+    </div>
+  </footer>
+</body>
+</html>
