@@ -51,43 +51,120 @@
   </header>
 
   <main id="contenuto">
-<!-- ===================== CHI SONO ===================== -->
-    <section class="section first" id="chi-sono" aria-labelledby="titolo-chi">
-      <div class="wrap split">
-        <div>
-          <p class="section-label">La mia storia</p>
-          <h1 id="titolo-chi">Chi sono</h1>
-          <p class="lead-strong">Un approccio pratico alla tecnologia.</p>
-          <div class="prose">
-            <p>Mi occupo di informatica e sviluppo di soluzioni digitali, con un approccio orientato alla risoluzione dei problemi.</p>
-            <p>Credo che una buona soluzione tecnologica non debba essere necessariamente complessa: deve funzionare, essere comprensibile e rispondere a un'esigenza reale. Ogni progetto parte dall'ascolto: capire cosa serve davvero è il primo passo per costruire qualcosa di utile.</p>
-            <p>Lavoro nell'informatica dal 2016, tra assistenza tecnica, sviluppo front-end e helpdesk.</p>
+    <!-- ===================== INTRODUZIONE ===================== -->
+    <section class="section first" aria-labelledby="titolo-chi">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Percorso"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Chi sono</span></nav>
+        <div class="split chi-intro">
+          <div>
+            <p class="section-label">La mia storia</p>
+            <h1 id="titolo-chi">Chi sono</h1>
+            <p class="lead-strong">Un approccio pratico alla tecnologia.</p>
+            <div class="prose">
+              <!-- Frase di apertura: riscrivila con parole tue se vuoi un tono più personale. -->
+              <p>Lavoro tra sviluppo web e sistemi IT: costruisco siti e strumenti digitali e mi occupo di postazioni, server e reti, con un approccio orientato alla risoluzione dei problemi.</p>
+              <p>Credo che una buona soluzione tecnologica non debba essere necessariamente complessa: deve funzionare, essere comprensibile e rispondere a un'esigenza reale.</p>
+            </div>
           </div>
-          <!--
-            Se vuoi una foto personale o del tuo spazio di lavoro, aggiungila qui con un <figure>
-            (vedi README). Usa solo immagini tue.
-          -->
+          <ul class="facts">
+            <li><strong>Dal 2016</strong><span>nell'informatica, tra assistenza tecnica, sviluppo front-end e helpdesk</span></li>
+            <li><strong>Web e IT</strong><span>due ambiti, con un solo interlocutore</span></li>
+            <li><strong>Toscana</strong><span>assistenza in sede e da remoto</span></li>
+          </ul>
         </div>
-        <ul class="pillars">
+      </div>
+    </section>
+
+    <!-- ===================== COMPETENZE ===================== -->
+    <section class="section" aria-labelledby="titolo-comp">
+      <div class="wrap">
+        <p class="section-label">In sintesi</p>
+        <h2 id="titolo-comp" class="h-sub">Competenze</h2>
+        <h3 class="soft-title">Tecniche</h3>
+        <div class="comp-grid">
+          <div class="comp">
+            <h3>Sviluppo web</h3>
+            <p class="chips"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span><span>Angular</span><span>Node.js</span><span>MySQL</span></p>
+            <p><a class="link-arrow" href="sviluppo-web.html">Dettaglio <span class="arrow" aria-hidden="true">↗</span></a></p>
+          </div>
+          <div class="comp">
+            <h3>Sistemista IT</h3>
+            <p class="chips"><span>Windows Server</span><span>Active Directory</span><span>VMware</span><span>Nginx e SSL</span><span>WatchGuard</span><span>Veeam (base)</span><span>Linux (base)</span></p>
+            <p><a class="link-arrow" href="consulenza-it.html">Dettaglio <span class="arrow" aria-hidden="true">↗</span></a></p>
+          </div>
+        </div>
+        <h3 class="soft-title">Soft skill</h3>
+        <ul class="soft">
           <li><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-person"/></svg><div><strong>Approccio diretto</strong><span>Il cliente parla con la persona che segue il progetto.</span></div></li>
           <li><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-target"/></svg><div><strong>Concretezza</strong><span>Le tecnologie si scelgono per risolvere un'esigenza, non per fare scena.</span></div></li>
           <li><svg class="icon" aria-hidden="true"><use href="assets/img/sprite.svg#i-check"/></svg><div><strong>Cura del risultato</strong><span>Interfacce pulite sul web; attenzione a funzionalità, stabilità e chiarezza nell'IT.</span></div></li>
         </ul>
       </div>
-      <div class="wrap path">
-        <h3>Percorso</h3>
-        <ul class="timeline">
-          <li><span class="when">Dal dicembre 2021</span><div><strong>Helpdesk e amministrazione IT</strong><span>Supporto di primo e secondo livello, installazione e configurazione di computer in ambiente aziendale, gestione di Windows 10/11 e Windows Server, assistenza in sede e da remoto, riparazione e manutenzione di computer, tablet e smartphone, dialogo con personale interno e fornitori.</span></div></li>
-          <li><span class="when">Ott 2019 – dic 2021</span><div><strong>Consulente sviluppatore software</strong><span>Sviluppo front-end con Angular 10 di un nuovo applicativo di sportello e correzione di bug.</span></div></li>
-          <li><span class="when">Giu – set 2019</span><div><strong>Corso di formazione Full Stack Developer</strong><span>HTML5, CSS3, Bootstrap, Java e Java EE, JavaScript, jQuery, MySQL, Angular, TypeScript, Node.js, Express, Hibernate e JPA.</span></div></li>
-          <li><span class="when">Ott 2016 – giu 2019</span><div><strong>Consulente informatico</strong><span>Assistenza tecnica a privati e aziende, in sede e da remoto. Installazione, manutenzione e riparazione di computer e stampanti, configurazione di server e NAS, installazione di firewall, configurazione di registratori di cassa.</span></div></li>
-          <li><span class="when">2010 – 2016</span><div><strong>Diploma di perito tecnico industriale, informatica e telecomunicazioni</strong><span>ITI Ferraris Brunelleschi.</span></div></li>
-        </ul>
-        <p class="skills-note">Lingue: italiano madrelingua, inglese base.</p>
+    </section>
+
+
+    <!-- ===================== COME LAVORO ===================== -->
+    <section class="section" aria-labelledby="titolo-metodo">
+      <div class="wrap">
+        <p class="section-label">Il mio metodo</p>
+        <h2 id="titolo-metodo" class="h-sub">Come lavoro</h2>
+        <ol class="method">
+          <li><h3>Ascolto</h3><p>Ogni progetto parte da qui: capire cosa serve davvero. Parli direttamente con me, senza intermediari.</p></li>
+          <li><h3>Proposta</h3><p>Una soluzione semplice e un perimetro chiaro, definiti insieme prima di iniziare.</p></li>
+          <li><h3>Realizzazione</h3><p>Scelgo le tecnologie per risolvere l'esigenza, non per fare scena.</p></li>
+          <li><h3>Verifica</h3><p>Controllo che tutto funzioni e sia comprensibile, sul web come nell'IT.</p></li>
+        </ol>
       </div>
     </section>
 
-      </main>
+    <!-- ===================== PERCORSO ===================== -->
+    <section class="section" aria-labelledby="titolo-percorso">
+      <div class="wrap">
+        <p class="section-label">Esperienza</p>
+        <h2 id="titolo-percorso" class="h-sub">Percorso</h2>
+        <ul class="career">
+            <li>
+              <span class="when">Dal dicembre 2021</span>
+              <h3>Helpdesk e amministrazione IT</h3>
+              <p>Supporto di primo e secondo livello, installazione e configurazione di computer in ambiente aziendale, gestione di Windows 10/11 e Windows Server, assistenza in sede e da remoto, riparazione e manutenzione di computer, tablet e smartphone, dialogo con personale interno e fornitori.</p>
+              <p class="career-tags"><span class="tag">IT</span></p>
+            </li>
+            <li>
+              <span class="when">Ott 2019 – dic 2021</span>
+              <h3>Consulente sviluppatore software</h3>
+              <p>Sviluppo front-end con Angular 10 di un nuovo applicativo di sportello e correzione di bug.</p>
+              <p class="career-tags"><span class="tag tag-verde">Web</span></p>
+            </li>
+            <li>
+              <span class="when">Ott 2016 – giu 2019</span>
+              <h3>Consulente informatico</h3>
+              <p>Assistenza tecnica a privati e aziende, in sede e da remoto. Installazione, manutenzione e riparazione di computer e stampanti, configurazione di server e NAS, installazione di firewall, configurazione di registratori di cassa.</p>
+              <p class="career-tags"><span class="tag">IT</span></p>
+            </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== FORMAZIONE ===================== -->
+    <section class="section" aria-labelledby="titolo-form">
+      <div class="wrap">
+        <p class="section-label">Formazione</p>
+        <h2 id="titolo-form" class="h-sub">Formazione e lingue</h2>
+        <dl class="edu">
+          <div><dt>2010 – 2016</dt><dd><strong>Diploma di perito tecnico industriale, informatica e telecomunicazioni</strong>ITI Ferraris Brunelleschi</dd></div>
+          <div><dt>Giu – set 2019</dt><dd><strong>Corso di formazione Full Stack Developer</strong>HTML5, CSS3, Bootstrap, Java e Java EE, JavaScript, jQuery, MySQL, Angular, TypeScript, Node.js, Express, Hibernate e JPA</dd></div>
+          <div><dt>Lingue</dt><dd><strong>Italiano madrelingua</strong>Inglese base</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="wrap next" aria-label="Contatto">
+      <div class="contact-strip">
+        <p>Hai un progetto o un'esigenza informatica? Parliamone.</p>
+        <a class="btn btn-primary" href="contatti.html">Scrivimi <span class="arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="wrap">

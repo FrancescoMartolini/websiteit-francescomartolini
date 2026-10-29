@@ -809,13 +809,12 @@ a:hover {
   background: var(--avorio);
 }
 
-/* ---------- Competenze e percorso ---------- */
+/* ---------- Competenze (pagine Web e IT) ---------- */
 
 .skills {
   margin-top: clamp(2rem, 4vw, 3rem);
 }
-.skills h3,
-.path h3 {
+.skills h3 {
   font-size: var(--t-h3);
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -860,66 +859,9 @@ a:hover {
   .skill-grid { grid-template-columns: 1fr; }
 }
 
-.path {
-  margin-top: clamp(2.5rem, 5vw, 4rem);
-}
-.timeline {
-  border-top: 1px solid var(--grigio);
-}
-.timeline li {
-  display: grid;
-  grid-template-columns: 11rem 1fr;
-  gap: 0.5rem 2rem;
-  padding: 1.25rem 0;
-  border-bottom: 1px solid var(--grigio);
-}
-.timeline .when {
-  font-size: var(--t-sm);
-  font-weight: 600;
-  color: var(--verde);
-}
-.timeline strong {
-  display: block;
-  font-family: var(--font-titoli);
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  margin-bottom: 0.25rem;
-}
-.timeline li div span {
-  font-size: var(--t-sm);
-  color: var(--testo-secondario);
-  display: block;
-  max-width: 70ch;
-}
-@media (max-width: 42rem) {
-  .timeline li { grid-template-columns: 1fr; }
-}
 
 /* ---------- Chi sono ---------- */
 
-.pillars {
-  border-top: 1px solid var(--grigio);
-}
-.pillars li {
-  display: flex;
-  gap: 1.1rem;
-  padding: 1.35rem 0;
-  border-bottom: 1px solid var(--grigio);
-}
-.pillars .icon {
-  color: var(--verde);
-  margin-top: 0.15rem;
-}
-.pillars strong {
-  font-family: var(--font-titoli);
-  font-weight: 700;
-  display: block;
-  margin-bottom: 0.15rem;
-}
-.pillars span {
-  color: var(--testo-secondario);
-  font-size: var(--t-sm);
-}
 
 /* ---------- Contatti ---------- */
 
@@ -1566,4 +1508,236 @@ a:hover {
   font-weight: 700;
   font-size: var(--t-lg);
   letter-spacing: -0.01em;
+}
+
+
+/* ==========================================================================
+   Pagina Chi sono
+   ========================================================================== */
+
+.h-sub {
+  font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.25rem) !important;
+  margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
+}
+.chi-intro {
+  align-items: center;
+}
+.facts {
+  border-top: 1px solid var(--grigio);
+}
+.facts li {
+  display: grid;
+  grid-template-columns: minmax(8rem, 11rem) 1fr;
+  gap: 0.25rem 1.5rem;
+  align-items: baseline;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--grigio);
+}
+.facts strong {
+  font-family: var(--font-titoli);
+  font-weight: 800;
+  font-size: clamp(1.4rem, 1.1rem + 1vw, 1.9rem);
+  letter-spacing: -0.03em;
+  color: var(--verde);
+}
+.facts span {
+  font-size: var(--t-sm);
+  color: var(--testo-secondario);
+}
+@media (max-width: 36rem) {
+  .facts li { grid-template-columns: 1fr; }
+}
+
+/* Metodo in quattro passi */
+.method {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: m;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+@media (max-width: 62rem) {
+  .method { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 36rem) {
+  .method { grid-template-columns: 1fr; }
+}
+.method li {
+  counter-increment: m;
+  background: var(--superficie);
+  border: 1px solid var(--grigio);
+  border-radius: var(--raggio-lg);
+  padding: 1.5rem;
+}
+.method li::before {
+  content: counter(m);
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--verde);
+  color: var(--avorio);
+  font-family: var(--font-titoli);
+  font-weight: 800;
+  font-size: var(--t-sm);
+  margin-bottom: 1rem;
+}
+.method h3 {
+  font-size: var(--t-h3);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+}
+.method p {
+  font-size: var(--t-sm);
+  color: var(--testo-secondario);
+}
+
+/* Percorso lavorativo: linea del tempo */
+.career {
+  border-left: 1px solid var(--grigio);
+  margin-left: 0.4rem;
+}
+.career li {
+  position: relative;
+  padding: 0 0 2.25rem 2rem;
+}
+.career li:last-child {
+  padding-bottom: 0;
+}
+.career li::before {
+  content: "";
+  position: absolute;
+  left: -0.4rem;
+  top: 0.3rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--verde);
+  box-shadow: 0 0 0 4px var(--avorio);
+}
+.career .when {
+  font-size: var(--t-sm);
+  font-weight: 600;
+  color: var(--verde);
+}
+.career h3 {
+  font-size: var(--t-h3);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0.15rem 0 0.4rem;
+}
+.career p {
+  font-size: var(--t-sm);
+  color: var(--testo-secondario);
+  max-width: 64ch;
+}
+.career .career-tags {
+  margin-top: 0.7rem;
+}
+
+/* Competenze in sintesi */
+.comp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+@media (max-width: 48rem) {
+  .comp-grid { grid-template-columns: 1fr; }
+}
+.comp {
+  background: var(--velo);
+  border: 1px solid var(--grigio);
+  border-radius: var(--raggio-lg);
+  padding: 1.5rem;
+}
+.comp h3 {
+  font-size: var(--t-h3);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.9rem;
+}
+.comp .chips {
+  margin-bottom: 1.1rem;
+}
+.comp .chips span {
+  background: var(--superficie);
+}
+
+/* Formazione e lingue */
+.edu {
+  margin: 0;
+  border-top: 1px solid var(--grigio);
+}
+.edu > div {
+  display: grid;
+  grid-template-columns: minmax(8rem, 11rem) 1fr;
+  gap: 0.25rem 1.5rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--grigio);
+}
+.edu dt {
+  font-size: var(--t-sm);
+  font-weight: 600;
+  color: var(--verde);
+}
+.edu dd {
+  margin: 0;
+  font-size: var(--t-sm);
+  color: var(--testo-secondario);
+  max-width: 64ch;
+}
+.edu dd strong {
+  display: block;
+  font-family: var(--font-titoli);
+  font-size: var(--t-base);
+  letter-spacing: -0.01em;
+  color: var(--grafite);
+  margin-bottom: 0.15rem;
+}
+@media (max-width: 36rem) {
+  .edu > div { grid-template-columns: 1fr; }
+}
+
+/* Soft skill */
+.soft-title {
+  font-size: var(--t-lg);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 1rem;
+}
+.comp-grid + .soft-title {
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+.soft {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--grigio);
+}
+.soft li {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem 1.25rem 0;
+  border-bottom: 1px solid var(--grigio);
+}
+.soft .icon {
+  color: var(--verde);
+  margin-top: 0.15rem;
+}
+.soft strong {
+  display: block;
+  font-family: var(--font-titoli);
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+.soft span {
+  font-size: var(--t-sm);
+  color: var(--testo-secondario);
+}
+@media (max-width: 62rem) {
+  .soft { grid-template-columns: 1fr; }
+  .soft li { padding-right: 0; }
 }
