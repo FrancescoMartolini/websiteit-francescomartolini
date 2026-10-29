@@ -9,8 +9,8 @@ index.html           home: lo schema delle aree
 sviluppo-web.html    area Sviluppo web
 consulenza-it.html   area Sistemista IT (consulenza informatica)
 progetti.html        progetti, con filtri Tutti / Web / IT
-documentazione.html  indice dei casi studio IT (non ancora collegato al menu)
-doc-dominio-ufficio.html  modello del caso 1, da compilare
+documentazione.html  indice dei casi studio IT
+doc-dominio-ufficio.html  caso 1 (in compilazione: contiene suggerimenti da sostituire)
 chi-sono.html        bio, percorso e competenze
 contatti.html        contatti
 privacy.html         informativa privacy
@@ -30,7 +30,7 @@ Lo schema nell'hero è composto da due livelli: un SVG (`.schema-art`) con cerch
 
 - Clic, tocco e tastiera aprono la pagina dell'area. Senza JavaScript lo schema funziona come un elenco di link.
 - Su desktop (mouse o penna) i tre nodi principali si possono trascinare al centro: rilasciati vicino al nodo FM aprono la pagina, altrimenti tornano al loro posto. Su touch il trascinamento è disattivato.
-- "Fotografo" apre `francescomartolini.art` in una nuova scheda.
+- I nodi principali sono Sviluppo web, Sistemista IT e Progetti; quelli minori Contatti, Chi sono e Documentazione. Il sito fotografico `francescomartolini.art` compare solo come progetto in `progetti.html`.
 - Per aggiungere o spostare un nodo, modifica il blocco `.schema` e la riga corrispondente in `.s-lines` (stesse coordinate, su una griglia 560 × 560).
 - L'animazione di apertura (linee che si tracciano) è disattivata con `prefers-reduced-motion`.
 
@@ -59,18 +59,15 @@ Come compilare un caso:
 
 Per aggiungere un nuovo caso, duplica `doc-dominio-ufficio.html` e aggiungi una card in `documentazione.html`.
 
-Le due pagine hanno `<meta name="robots" content="noindex">` e non sono collegate al menu, perché sono ancora un modello. Quando il primo caso è completo:
-- togli `noindex` dalle due pagine;
-- aggiungi un link a `documentazione.html` in `consulenza-it.html`;
-- aggiungi la scheda del caso in `progetti.html` (`data-area="it"`) e le due pagine nella sitemap.
+Le due pagine sono pubbliche e collegate da `consulenza-it.html` (pulsante "Documentazione tecnica") e da una scheda in `progetti.html`. Il caso 1 è segnato "In corso" finché non è completo: a quel punto togli il tag dalla pagina e dalla scheda. Se aggiungi una sitemap, inserisci anche queste due pagine.
 
 ## Screenshot dei progetti
 
-In ogni card progetto c'è un riquadro `.thumb` con la scritta "Screenshot in arrivo" o "In preparazione". Per inserire uno screenshot reale:
+Le schede progetto non hanno immagini. Per aggiungere uno screenshot reale:
 
 1. salva l'immagine in `assets/img/` (WebP o JPEG ottimizzato);
-2. sostituisci il contenuto di `<div class="thumb">…</div>` con
-   `<img src="assets/img/NOME.webp" alt="Descrizione" width="1280" height="800" loading="lazy">`.
+2. inserisci, come primo elemento dentro `<article class="project">`,
+   `<div class="thumb"><img src="assets/img/NOME.webp" alt="Descrizione" width="1280" height="800" loading="lazy"></div>`.
 
 Per aggiungere una foto personale in "Chi sono", inserisci un `<figure>` con un'immagine tua nel punto indicato dal commento HTML.
 

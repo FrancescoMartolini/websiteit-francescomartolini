@@ -1215,20 +1215,6 @@ a:hover {
   outline: 3px solid var(--grafite);
   outline-offset: 7px;
 }
-/* Area esterna: contorno invece del pieno */
-.node-ext .dot {
-  background: var(--superficie);
-  color: var(--verde);
-  box-shadow: 0 0 0 5px var(--superficie), 0 0 0 6.5px var(--verde);
-  border: 2px dashed var(--verde);
-}
-.node-ext:hover .dot,
-.node-ext:focus-visible .dot {
-  background: var(--verde);
-  color: var(--avorio);
-  border-style: solid;
-}
-
 .node-minor .dot {
   display: block;
   position: relative;
